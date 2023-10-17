@@ -8,7 +8,7 @@ const AutomatedCommitPage = () => {
     
       const stopCommit = async () => {
         try {
-          const response = await fetch('http://localhost:3000/user/stop_commit', {
+          const response = await fetch('https://commit-bot-p7nz.vercel.app/user/stop_commit', {
             method: 'GET',
           });
   
