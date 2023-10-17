@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: ["commit-bot-client.vercel.app"],
+  origin: ["https://commit-bot-client.vercel.app/"],
   methods: ["POST","GET"],
   credentials:true
 }));
