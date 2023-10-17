@@ -20,7 +20,7 @@ export default function CommitForm(){
     };
 
     try {
-      const response = await fetch('commit-bot-p7nz.vercel.app/user/commit', {
+      const response = await fetch('https://commit-bot-p7nz.vercel.app/user/commit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
