@@ -46,7 +46,7 @@ let commitInterval;
         }).then(res => {
             console.log('Commit successful!');
            
-        }).catch(err => console.log(err));
+        }).catch(err => res.status(500).json({message:err.message});
     }, config.interval);
 })();
         
