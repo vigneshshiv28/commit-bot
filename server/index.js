@@ -9,7 +9,11 @@ const commitRoutes = require('./routes/commit.js');
 app.use(express.json());
 
 
-app.use(cors());
+app.use(corsapp.UseCors(x => x
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .SetIsOriginAllowed(origin => true) // allow any origin
+                    .AllowCredentials()); // 
 app.use('/user', commitRoutes);
 
 app.listen(3000, () => {
