@@ -9,7 +9,9 @@ const commitRoutes = require('./routes/commit.js');
 app.use(express.json());
 
 
-app.use(cors());
+app.use(cors(
+  origin:["https://commit-bot-client.vercel.app/",]
+));
 app.use('/user', commitRoutes);
 
 app.listen(3000, () => {
